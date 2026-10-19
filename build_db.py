@@ -40,12 +40,20 @@ voids = [
  ("Payments & infrastructure void","Fragmented or absent payment/commerce rails"),
  ("Supply chain void","Broken formal supply chains between producers and off-takers"),
  ("Philanthropic engagement gap","Charitable giving infrastructure underdeveloped"),
+ ("Climate resilience & clean environment void","Climate change effects (water scarcity, floods, heat) undermine vulnerable communities lacking adaptive infrastructure"),
+ ("Retail capital market access void","Capital markets shallow; retail investors lack diversified, transparent, low-cost products beyond mutual funds"),
+ ("Bond/fixed-income access void","Bond markets opaque and dominated by banks; retail investors excluded"),
+ ("Insurance penetration void","Very low health/life insurance penetration leaving families exposed to catastrophic costs"),
+ ("Financial literacy void","Complex financial products & news inaccessible to most of the population"),
+ ("Urban air pollution void","Severe urban air pollution with no affordable clean-air infrastructure"),
+ ("Sanitation & hygiene void","Lack of safe sanitation and menstrual hygiene products & facilities"),
+ ("Healthy food access void","Food system dominated by ultra-processed products; honest healthy options scarce"),
 ]
 cur.executemany("INSERT INTO voids(name, description) VALUES (?,?)", voids)
 
 sdgs = [(1,"No Poverty"),(2,"Zero Hunger"),(3,"Good Health and Well-being"),(4,"Quality Education"),
         (5,"Gender Equality"),(7,"Affordable and Clean Energy"),(8,"Decent Work and Economic Growth"),
-        (9,"Industry, Innovation and Infrastructure"),(10,"Reduced Inequalities"),(12,"Responsible Consumption and Production")]
+        (9,"Industry, Innovation and Infrastructure"),(10,"Reduced Inequalities"),(11,"Sustainable Cities and Communities"),(12,"Responsible Consumption and Production"),(13,"Climate Action"),(6,"Clean Water and Sanitation")]
 cur.executemany("INSERT INTO sdgs(number,title) VALUES (?,?)", sdgs)
 
 # Startup -> void, SDGs
@@ -66,6 +74,14 @@ sv = {
  "Aerobotics": ("Agricultural market & finance void",[2,8]),
  "Bboxx / off-grid solar cohort": ("Energy access",[7,1,10]),
  "Do Good Points": ("Philanthropic engagement gap",[3,12]),
+ "smallcase": ("Retail capital market access void",[8,9,10]),
+ "Wint Wealth": ("Bond/fixed-income access void",[8,10]),
+ "GoldenPi": ("Bond/fixed-income access void",[8,10]),
+ "Ditto Insurance": ("Insurance penetration void",[3,8,10]),
+ "Finshots": ("Financial literacy void",[4,8,10]),
+ "Praan": ("Urban air pollution void",[3,11,13]),
+ "PeeSafe": ("Sanitation & hygiene void",[3,5,6]),
+ "The Whole Truth": ("Healthy food access void",[2,3,12]),
 }
 with open("startups.csv") as f:
     for r in csv.DictReader(f):
@@ -95,6 +111,10 @@ ivmap = {
  "Bamboo Capital Partners":"Capital access gap (pioneer gap / missing middle)",
  "Commonwealth":"Capital access gap (pioneer gap / missing middle)",
  "Samir Sathe-type individual angels (India)":"Capital access gap (pioneer gap / missing middle)",
+ "Raintree Foundation / Raintree Family Office":"Climate resilience & clean environment void",
+ "Rainmatter Capital (Zerodha)":"Capital access gap (pioneer gap / missing middle)",
+ "Rainmatter Foundation (Zerodha)":"Climate resilience & clean environment void",
+ "Climate Angels":"Climate resilience & clean environment void",
 }
 with open("investors.csv") as f:
     for r in csv.DictReader(f):
@@ -109,6 +129,14 @@ seed = [
  ("Acumen (incl. Acumen Angel Network)","Yellow","equity",2000000,"2024","Hardest-to-Reach initiative"),
  ("Acumen (incl. Acumen Angel Network)","Acceso","equity",None,None,"Acumen portfolio"),
  ("Root Capital","Acceso","debt",None,None,"illustrative agri-finance edge"),
+ ("Rainmatter Capital (Zerodha)","smallcase","equity",None,"2015","Rainmatter portfolio; Wikipedia + rainmatter.org"),
+ ("Rainmatter Capital (Zerodha)","Wint Wealth","equity",None,None,"Rainmatter portfolio; Wikipedia Zerodha"),
+ ("Rainmatter Capital (Zerodha)","GoldenPi","equity",None,None,"Rainmatter portfolio; Wikipedia Zerodha"),
+ ("Rainmatter Capital (Zerodha)","Ditto Insurance","equity",None,None,"Rainmatter portfolio; moneycontrol"),
+ ("Rainmatter Capital (Zerodha)","Finshots","equity",None,None,"Rainmatter portfolio; rainmatter.org blog"),
+ ("Rainmatter Capital (Zerodha)","PeeSafe","equity",None,None,"Rainmatter portfolio; Entrepreneur India"),
+ ("Rainmatter Capital (Zerodha)","The Whole Truth","equity",None,None,"Rainmatter portfolio; Entrepreneur India"),
+ ("Climate Angels","Praan","seed",None,"2022-07","Climate Angels portfolio page: seed round July 2022"),
 ]
 for i,s,rd,amt,dt,note in seed:
     cur.execute("""INSERT INTO investments(investor_id,startup_id,round,amount_usd,announced_date,notes)
