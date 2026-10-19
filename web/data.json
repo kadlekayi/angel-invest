@@ -1,0 +1,1093 @@
+{
+ "startups": [
+  {
+   "name": "Acceso",
+   "sector": "Agri-food supply chains",
+   "region": "Latin America / Caribbean",
+   "website": "https://acceso.org",
+   "model": "Links smallholder farmers to premium markets; guaranteeing incomes & market access",
+   "stage": "Growth",
+   "void": "Agricultural market & finance void",
+   "sdgs": [
+    1,
+    2,
+    8
+   ],
+   "investors": [
+    {
+     "investor": "Acumen (incl. Acumen Angel Network)",
+     "round": "equity",
+     "announced_date": null
+    },
+    {
+     "investor": "Root Capital",
+     "round": "debt",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Aerobotics",
+   "sector": "Agritech / AI",
+   "region": "South Africa",
+   "website": "https://aerobotics.com",
+   "model": "AI-driven tree crop health analytics; ~$68M scale-up",
+   "stage": "Scaled",
+   "void": "Agricultural market & finance void",
+   "sdgs": [
+    2,
+    8
+   ],
+   "investors": []
+  },
+  {
+   "name": "Afluenta",
+   "sector": "P2P lending",
+   "region": "Latin America",
+   "website": "https://afluenta.com",
+   "model": "First peer-to-peer lending platform in Latin America connecting borrowers with thin credit files to individual investors",
+   "stage": "Series A",
+   "void": "Financial exclusion",
+   "sdgs": [
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Bboxx",
+   "sector": "Off-grid energy",
+   "region": "Kenya & Sub-Saharan Africa",
+   "website": "https://bboxx.com",
+   "model": "PAYG solar home systems with embedded financing; serves millions off-grid customers",
+   "stage": "Growth / scaled",
+   "void": "Energy access",
+   "sdgs": [
+    1,
+    7,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "Complete Farmer",
+   "sector": "Agritech",
+   "region": "Ghana",
+   "website": "https://completefarmer.com",
+   "model": "Agent-assisted platform helping farmers access inputs and meet buyer standards",
+   "stage": "Growth",
+   "void": "Agricultural market & finance void",
+   "sdgs": [
+    1,
+    2,
+    8
+   ],
+   "investors": []
+  },
+  {
+   "name": "Ditto Insurance",
+   "sector": "Insurtech",
+   "region": "India",
+   "website": "https://dittoinsurance.com",
+   "model": "Insurance advisory that simplifies policy selection and expands coverage among underinsured populations",
+   "stage": "Growth",
+   "void": "Insurance penetration void",
+   "sdgs": [
+    3,
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Do Good Points",
+   "sector": "Fintech / philanthropy",
+   "region": "United States",
+   "website": "https://dogoodpoints.com",
+   "model": "Rewards fintech incentivizing charitable giving; supports mental health via The Do Good Foundation",
+   "stage": "Early",
+   "void": "Philanthropic engagement gap",
+   "sdgs": [
+    3,
+    12
+   ],
+   "investors": []
+  },
+  {
+   "name": "Finshots",
+   "sector": "Media / financial literacy",
+   "region": "India",
+   "website": "https://finshots.in",
+   "model": "Daily 3-min newsletter demystifying finance for millions of readers",
+   "stage": "Scaled",
+   "void": "Financial literacy void",
+   "sdgs": [
+    4,
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Flutterwave",
+   "sector": "Payments infrastructure",
+   "region": "Africa",
+   "website": "https://flutterwave.com",
+   "model": "African payments unicorn enabling commerce across a fragmented continent; last-mile mobile money rails",
+   "stage": "Mature unicorn",
+   "void": "Payments & infrastructure void",
+   "sdgs": [
+    8,
+    9,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "GoldenPi",
+   "sector": "Fintech / bonds",
+   "region": "India",
+   "website": "https://goldenpi.com",
+   "model": "Marketplace opening up bond investing to retail investors with transparency",
+   "stage": "Growth",
+   "void": "Bond/fixed-income access void",
+   "sdgs": [
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Ilara Health",
+   "sector": "Healthtech",
+   "region": "Kenya",
+   "website": "https://ilarahealth.com",
+   "model": "Platform equipping informal primary-care clinics with diagnostics",
+   "stage": "Growth",
+   "void": "Healthcare access",
+   "sdgs": [
+    3,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "Indifi Technologies",
+   "sector": "MSME lending",
+   "region": "India",
+   "website": "https://indifi.com",
+   "model": "Data-driven digital lending platform using cash-flow underwriting for MSMEs without collateral",
+   "stage": "Series C",
+   "void": "MSME credit void",
+   "sdgs": [
+    8,
+    9,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Kidogo",
+   "sector": "Early childhood education",
+   "region": "East Africa",
+   "website": "https://kidogo.co",
+   "model": "Hub-and-spoke 'mamapreneur' franchise model for affordable early childhood care & education",
+   "stage": "Growth",
+   "void": "Education & childcare void",
+   "sdgs": [
+    4,
+    5,
+    8
+   ],
+   "investors": [
+    {
+     "investor": "Acumen (incl. Acumen Angel Network)",
+     "round": "grant/equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Lula",
+   "sector": "Fintech / SME banking",
+   "region": "South Africa",
+   "website": "https://lula.co.za",
+   "model": "AI-driven working-capital loans & business banking for SMEs",
+   "stage": "Series A",
+   "void": "Financial exclusion",
+   "sdgs": [
+    8,
+    9
+   ],
+   "investors": []
+  },
+  {
+   "name": "MNT-Halan",
+   "sector": "Fintech",
+   "region": "Egypt",
+   "website": "https://mnthalan.com",
+   "model": "Tech-enabled lending & payments serving millions excluded from banking; one of Egypt's largest fintechs",
+   "stage": "Scaled unicorn",
+   "void": "Financial exclusion",
+   "sdgs": [
+    1,
+    8,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "Nia.one",
+   "sector": "Worker housing / living infrastructure",
+   "region": "India",
+   "website": "https://nia.one",
+   "model": "AI-native underwriting platform building & running living infrastructure for India's manufacturing workforce",
+   "stage": "Seed",
+   "void": "Worker living infrastructure void",
+   "sdgs": [
+    8,
+    10,
+    11
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "seed",
+     "announced_date": 2024
+    }
+   ]
+  },
+  {
+   "name": "Oraan",
+   "sector": "Fintech / savings",
+   "region": "Pakistan",
+   "website": "https://oraan.com",
+   "model": "Digitizes ROSCAs (rotating savings groups) giving women a digital financial footprint & entry to formal finance",
+   "stage": "Series A",
+   "void": "Financial exclusion",
+   "sdgs": [
+    5,
+    8,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "PeeSafe",
+   "sector": "Health / hygiene",
+   "region": "India",
+   "website": "https://peesafe.com",
+   "model": "Personal hygiene & sanitation product brand improving health outcomes; especially for women",
+   "stage": "Growth",
+   "void": "Sanitation & hygiene void",
+   "sdgs": [
+    3,
+    5,
+    6
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Praan",
+   "sector": "Deep tech / air quality",
+   "region": "India",
+   "website": "https://praan.io",
+   "model": "Filterless outdoor air purification systems (MK One/MK-II) for factories schools & public spaces; no recurring filter costs",
+   "stage": "Seed (2022)",
+   "void": "Urban air pollution void",
+   "sdgs": [
+    3,
+    11,
+    13
+   ],
+   "investors": [
+    {
+     "investor": "Climate Angels",
+     "round": "seed",
+     "announced_date": "2022-07"
+    }
+   ]
+  },
+  {
+   "name": "Puna Bio",
+   "sector": "Ag-biotech",
+   "region": "Argentina",
+   "website": "https://punabio.com",
+   "model": "Microbial biofertilizers for extreme soils from public-research spin-out; LatAm deep-science agtech",
+   "stage": "Early",
+   "void": "Agricultural market & finance void",
+   "sdgs": [
+    2,
+    12
+   ],
+   "investors": []
+  },
+  {
+   "name": "SarvaGram",
+   "sector": "Rural distribution & fintech",
+   "region": "India",
+   "website": "https://sarvagram.com",
+   "model": "Last-mile rural distribution network offering credit/insurance/products to 'Entrepreneurial Households'; rural MSME lending",
+   "stage": "Series C",
+   "void": "Rural last-mile access void",
+   "sdgs": [
+    1,
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Shubham Housing Finance",
+   "sector": "Housing finance",
+   "region": "India",
+   "website": "https://shubham.co",
+   "model": "Home loans to informal workers (drivers tradesmen maids ~Rs 40k/month income); 100k households across 13 states",
+   "stage": "Scaled",
+   "void": "Housing finance void",
+   "sdgs": [
+    1,
+    10,
+    11
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": 2012
+    },
+    {
+     "investor": "LeapFrog Investments",
+     "round": "equity",
+     "announced_date": 2022
+    }
+   ]
+  },
+  {
+   "name": "SmartMoney",
+   "sector": "Rural payments",
+   "region": "Uganda & Tanzania",
+   "website": "https://smartmoney.fm",
+   "model": "Financially-inclusive rural payment ecosystem streamlining agricultural payments; 200k customers; 2500 merchants; 150 institutional partners",
+   "stage": "Growth",
+   "void": "Payments & infrastructure void",
+   "sdgs": [
+    1,
+    8
+   ],
+   "investors": []
+  },
+  {
+   "name": "The Whole Truth",
+   "sector": "Food / nutrition",
+   "region": "India",
+   "website": "https://thewholetruthfoods.com",
+   "model": "Whole-food; no-added-sugar food brand with radical ingredient transparency",
+   "stage": "Growth",
+   "void": "Healthy food access void",
+   "sdgs": [
+    2,
+    3,
+    12
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Ujjivan Financial Services",
+   "sector": "Microfinance / small finance bank",
+   "region": "India",
+   "website": "https://ujjivansfb.in",
+   "model": "Microfinance NBFC turned Small Finance Bank serving urban/semi-urban low-income customers; IPO 2016; now a listed SFB",
+   "stage": "Scaled (listed)",
+   "void": "Financial exclusion",
+   "sdgs": [
+    1,
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": 2008
+    }
+   ]
+  },
+  {
+   "name": "Varthana",
+   "sector": "School finance",
+   "region": "India",
+   "website": "https://varthana.com",
+   "model": "Loans and support to affordable private school entrepreneurs improving education for low-income families; 97.5% post-COVID collection efficiency",
+   "stage": "Growth",
+   "void": "School finance void",
+   "sdgs": [
+    4,
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Vistaar Financial Services",
+   "sector": "MSME lending",
+   "region": "India",
+   "website": "https://vistaarfinance.com",
+   "model": "MSME lending across semi-urban/rural India",
+   "stage": "Scaled",
+   "void": "MSME credit void",
+   "sdgs": [
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Elevar Equity",
+     "round": "equity",
+     "announced_date": 2008
+    }
+   ]
+  },
+  {
+   "name": "Wave",
+   "sector": "Mobile money",
+   "region": "Senegal / Francophone West Africa",
+   "website": "https://wave.com",
+   "model": "Low-fee mobile money challenger to telecom incumbents; Senegal's unicorn",
+   "stage": "Scaled unicorn",
+   "void": "Payments & infrastructure void",
+   "sdgs": [
+    1,
+    8,
+    10
+   ],
+   "investors": []
+  },
+  {
+   "name": "Winich",
+   "sector": "Agritech marketplace",
+   "region": "Nigeria",
+   "website": "https://winich.com",
+   "model": "Agent network (thousands) connecting farmers with buyers & inputs",
+   "stage": "Growth",
+   "void": "Supply chain void",
+   "sdgs": [
+    1,
+    2,
+    8
+   ],
+   "investors": []
+  },
+  {
+   "name": "Wint Wealth",
+   "sector": "Fintech / fixed income",
+   "region": "India",
+   "website": "https://wintwealth.com",
+   "model": "Platform offering asset-backed fixed-income products to retail investors previously reserved for institutions",
+   "stage": "Growth",
+   "void": "Bond/fixed-income access void",
+   "sdgs": [
+    8,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": null
+    }
+   ]
+  },
+  {
+   "name": "Yellow",
+   "sector": "Off-grid solar / e-mobility",
+   "region": "Malawi & Southern Africa",
+   "website": "https://yellow.com",
+   "model": "Pay-as-you-go solar & e-mobility distribution reaching hardest-to-serve off-grid customers",
+   "stage": "Growth",
+   "void": "Energy access",
+   "sdgs": [
+    1,
+    7,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Acumen (incl. Acumen Angel Network)",
+     "round": "equity",
+     "announced_date": 2024
+    }
+   ]
+  },
+  {
+   "name": "smallcase",
+   "sector": "Fintech / capital markets",
+   "region": "India",
+   "website": "https://smallcase.com",
+   "model": "Model portfolio platform enabling retail investors to build diversified thematic investments; grew India's capital market depth",
+   "stage": "Growth",
+   "void": "Retail capital market access void",
+   "sdgs": [
+    8,
+    9,
+    10
+   ],
+   "investors": [
+    {
+     "investor": "Rainmatter Capital (Zerodha)",
+     "round": "equity",
+     "announced_date": 2015
+    }
+   ]
+  }
+ ],
+ "investors": [
+  {
+   "name": "Accion Venture Lab",
+   "type": "Affiliated impact fund",
+   "geography": "Global emerging markets",
+   "focus": "Fintech for financial inclusion",
+   "stage": "Seed",
+   "check": "100k-1M",
+   "website": "https://accion.org",
+   "thesis": "First global emerging-market fintech fund for the underserved (Accion Frontier Inclusion Fund)",
+   "void": "Financial exclusion",
+   "portfolio": []
+  },
+  {
+   "name": "Acumen (incl. Acumen Angel Network)",
+   "type": "Impact fund + angel network",
+   "geography": "Global (Sub-Saharan Africa; South Asia; Latin America; US)",
+   "focus": "Clean energy; agriculture; healthcare; education; financial inclusion",
+   "stage": "Early / patient capital",
+   "check": "100k-3M+",
+   "website": "https://acumen.org",
+   "thesis": "Pioneer of 'patient capital'; Hardest-to-Reach initiative deploys catalytic capital for off-grid solar (>$246M committed in 2025)",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": [
+    {
+     "startup": "Kidogo",
+     "round": "grant/equity"
+    },
+    {
+     "startup": "Yellow",
+     "round": "equity"
+    },
+    {
+     "startup": "Acceso",
+     "round": "equity"
+    }
+   ]
+  },
+  {
+   "name": "Angels for Angels",
+   "type": "Fiscal sponsorship + angel group",
+   "geography": "Seattle / global",
+   "focus": "Social entrepreneurs worldwide",
+   "stage": "Pre-seed/seed",
+   "check": "Varies",
+   "website": "https://angelsforangels.org",
+   "thesis": "Offers fiscal sponsorship alongside angel support to global social entrepreneurs",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Angels of Impact",
+   "type": "Angel network",
+   "geography": "Asia-Pacific (esp. Southeast Asia)",
+   "focus": "Women-led & Indigenous community enterprises (SDG 1; 5; 8; 12)",
+   "stage": "Early",
+   "check": "Varies",
+   "website": "https://angelsofimpact.com",
+   "thesis": "Targets women enterprises too big for microfinance and too small for traditional impact funds",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Bamboo Capital Partners",
+   "type": "Impact platform",
+   "geography": "Global emerging markets",
+   "focus": "Businesses serving low/middle-income populations",
+   "stage": "Seed to growth (debt & equity)",
+   "check": "Varies",
+   "website": "https://bamboocapital.com",
+   "thesis": "Full-suite financing solutions bridging seed-to-growth capital",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Climate Angels",
+   "type": "Early-stage climate fund",
+   "geography": "India",
+   "focus": "Climate tech: clean air; energy transition; sustainable agriculture",
+   "stage": "Seed",
+   "check": "Varies",
+   "website": "https://climateangels.in",
+   "thesis": "India-focused climate seed fund backing deeptech ventures like Praan filterless air purification",
+   "void": "Climate resilience & clean environment void",
+   "portfolio": [
+    {
+     "startup": "Praan",
+     "round": "seed"
+    }
+   ]
+  },
+  {
+   "name": "Commonwealth",
+   "type": "Impact matching + 501c3",
+   "geography": "US",
+   "focus": "Redemptive / social ventures",
+   "stage": "Early",
+   "check": "Varies",
+   "website": "https://commonwealth.vc",
+   "thesis": "Performs social venture design and financial diligence before matching with impact investors",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "E8 Angels",
+   "type": "Angel network",
+   "geography": "Seattle / international",
+   "focus": "Cleantech; energy transition",
+   "stage": "Early",
+   "check": "25k-100k",
+   "website": "https://e8angels.com",
+   "thesis": "Member-led angel group accelerating early cleantech enterprises",
+   "void": "Energy access",
+   "portfolio": []
+  },
+  {
+   "name": "EPIC World",
+   "type": "Platform / network (not a fund)",
+   "geography": "India (global ambitions)",
+   "focus": "Entrepreneurial Households: inclusivity & capital",
+   "stage": "Network & curation (non-investing)",
+   "check": "N/A",
+   "website": "https://epicworld.com",
+   "thesis": "Elevar-co-founded platform (2024) building ecosystem of 50+ blue-chip companies serving Entrepreneurial Households; curated insights & network rather than direct fund",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Elevar Equity",
+   "type": "VC (human-centered impact investing)",
+   "geography": "India & Latin America",
+   "focus": "Financial services; housing; education; healthcare; agri supply chains for 'Entrepreneurial Households'",
+   "stage": "Early growth equity",
+   "check": "~$285M across 4 funds; 41 companies",
+   "website": "https://elevarequity.com",
+   "thesis": "Founded 2008 by Sandeep Farias; Johanna Posada; Maya Chorengel & Chris Brookfield; 'Elevar Method' = identify underserved group then back entrepreneur with scalable low-cost distribution model; 'Low ARPU High Wallet Share' framework; catalyzed billions for 40M+ households; pioneered Indian microfinance-to-banking transformation",
+   "void": "Financial exclusion",
+   "portfolio": [
+    {
+     "startup": "Ujjivan Financial Services",
+     "round": "equity"
+    },
+    {
+     "startup": "Shubham Housing Finance",
+     "round": "equity"
+    },
+    {
+     "startup": "Varthana",
+     "round": "equity"
+    },
+    {
+     "startup": "SarvaGram",
+     "round": "equity"
+    },
+    {
+     "startup": "Indifi Technologies",
+     "round": "equity"
+    },
+    {
+     "startup": "Vistaar Financial Services",
+     "round": "equity"
+    },
+    {
+     "startup": "Afluenta",
+     "round": "equity"
+    },
+    {
+     "startup": "Nia.one",
+     "round": "seed"
+    }
+   ]
+  },
+  {
+   "name": "Intellecap / Impact Investment Network (I3N)",
+   "type": "Angel network",
+   "geography": "India",
+   "focus": "Education; healthcare; agriculture; livelihoods",
+   "stage": "Early",
+   "check": "Varies",
+   "website": "https://intellecap.com",
+   "thesis": "First formal impact-focused angel network in India; backed by Intellecap ecosystem",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Katapult (Katapult VC / Katapult Foundation)",
+   "type": "VC + angel ecosystem",
+   "geography": "Norway / global",
+   "focus": "Impact tech; ocean/climate tech",
+   "stage": "Seed (Africa/Asia)",
+   "check": "50k-500k",
+   "website": "https://katapultfoundation.com",
+   "thesis": "Runs accelerator + fund combo focused on impact tech in emerging markets",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "LeapFrog Investments",
+   "type": "Growth-stage impact fund",
+   "geography": "Africa & emerging Asia",
+   "focus": "Financial inclusion; healthcare; climate",
+   "stage": "Growth",
+   "check": "5M+",
+   "website": "https://leapfroginvest.com",
+   "thesis": "'Profit with purpose' model; ~$2B+ AUM serving hundreds of millions of emerging consumers; acquired Elevar's Shubham stake (2022)",
+   "void": "Financial exclusion",
+   "portfolio": [
+    {
+     "startup": "Shubham Housing Finance",
+     "round": "equity"
+    }
+   ]
+  },
+  {
+   "name": "NESsT",
+   "type": "Venture philanthropy + impact investor",
+   "geography": "Latin America & Eastern Europe",
+   "focus": "Front-line employment-generating enterprises",
+   "stage": "Early",
+   "check": "Varies",
+   "website": "https://nesst.org",
+   "thesis": "Since 1997; supports enterprises creating jobs for excluded populations",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Rainmatter Capital (Zerodha)",
+   "type": "Corporate venture arm (permanent capital)",
+   "geography": "India",
+   "focus": "Fintech; climate; health; deep tech; media",
+   "stage": "Early / growth",
+   "check": "~$180M (Rs 1;500 crore) deployed across 160+ startups",
+   "website": "https://rainmatter.com",
+   "thesis": "Nithin Kamath's Zerodha investment arm (est. 2016); unique permanent-capital structure with no exit mandates enabling patient support; 10% of Zerodha earnings allocated to startups",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": [
+    {
+     "startup": "smallcase",
+     "round": "equity"
+    },
+    {
+     "startup": "Wint Wealth",
+     "round": "equity"
+    },
+    {
+     "startup": "GoldenPi",
+     "round": "equity"
+    },
+    {
+     "startup": "Ditto Insurance",
+     "round": "equity"
+    },
+    {
+     "startup": "Finshots",
+     "round": "equity"
+    },
+    {
+     "startup": "PeeSafe",
+     "round": "equity"
+    },
+    {
+     "startup": "The Whole Truth",
+     "round": "equity"
+    }
+   ]
+  },
+  {
+   "name": "Rainmatter Foundation (Zerodha)",
+   "type": "Nonprofit grantmaking foundation",
+   "geography": "India",
+   "focus": "Climate; environment; health; social sector",
+   "stage": "Grants / catalytic philanthropy",
+   "check": "10% of Zerodha earnings",
+   "website": "https://rainmatter.org",
+   "thesis": "Zerodha's social-sector arm; supports NGOs and initiatives that don't fit the for-profit investment model",
+   "void": "Climate resilience & clean environment void",
+   "portfolio": []
+  },
+  {
+   "name": "Raintree Foundation / Raintree Family Office",
+   "type": "Family office (impact investing + philanthropy)",
+   "geography": "India (exploring global)",
+   "focus": "Climate resilience; clean energy; sustainable livelihoods; watershed ecology; biodiversity; mental health",
+   "stage": "Early / catalytic",
+   "check": "~1/3 of family wealth to impact (initial ~$13M corpus)",
+   "website": "https://theraintree.org",
+   "thesis": "Dandekar family office (est. 2018); hybrid model of for-profit impact portfolio + catalytic philanthropy; advances 15 of 17 SDGs; flagship program transforms entire landscapes environmentally and socially",
+   "void": "Climate resilience & clean environment void",
+   "portfolio": []
+  },
+  {
+   "name": "Root Capital",
+   "type": "Impact lender",
+   "geography": "Latin America; Africa",
+   "focus": "Agricultural enterprises in developing countries",
+   "stage": "Growth (debt)",
+   "check": "250k-5M",
+   "website": "https://rootcapital.org",
+   "thesis": "Lends to farmer cooperatives and agri-SMEs too risky for banks; too small for PE",
+   "void": "Agricultural market & finance void",
+   "portfolio": [
+    {
+     "startup": "Acceso",
+     "round": "debt"
+    }
+   ]
+  },
+  {
+   "name": "Samir Sathe-type individual angels (India)",
+   "type": "Individual angel",
+   "geography": "India",
+   "focus": "Education; healthcare; agriculture social ventures",
+   "stage": "Early",
+   "check": "Varies",
+   "website": "https://yourstory.com",
+   "thesis": "Hands-on mentoring entrepreneurs months before investment; often lead or solo investor",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Sandeep Farias",
+   "type": "Individual angel / GP",
+   "geography": "India (Bengaluru)",
+   "focus": "Microfinance; financial inclusion; education; workforce housing",
+   "stage": "Angel / pre-VC",
+   "check": "Varies",
+   "website": "https://elevarequity.com/team/sandeep-farias",
+   "thesis": "Founder & Managing Partner Elevar Equity; established Unitus India 2004 partnering with formative microfinance institutions; co-founder EPIC World platform to build 50+ blue-chip companies serving Entrepreneurial Households",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "SheEO",
+   "type": "Activator network (community capital)",
+   "geography": "Global",
+   "focus": "Women & non-binary led ventures",
+   "stage": "Early",
+   "check": "Low-interest loans (~$25k+)",
+   "website": "https://sheeo.world",
+   "thesis": "'Activators' contribute funds loaned at low interest to women-led ventures; partnered with Toniic",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Social Venture Circle (formerly Investors' Circle)",
+   "type": "Angel network",
+   "geography": "US (+ some global)",
+   "focus": "Impact startups across sectors",
+   "stage": "Seed / early",
+   "check": "25k-250k",
+   "website": "https://socialventurecircle.org",
+   "thesis": "Largest US impact angel network; formed 2018 merger of Investors' Circle (founded 1992) and Social Venture Network",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  },
+  {
+   "name": "Toniic",
+   "type": "Global angel network",
+   "geography": "25+ countries",
+   "focus": "All impact sectors incl. healthcare; education; climate; financial inclusion",
+   "stage": "Early-stage",
+   "check": "Co-investment (varies)",
+   "website": "https://toniic.com",
+   "thesis": "~500 HNW individual; family office & foundation members; T100 report tracks SDG portfolios; curates co-investments",
+   "void": "Capital access gap (pioneer gap / missing middle)",
+   "portfolio": []
+  }
+ ],
+ "sdgs": {
+  "1": "No Poverty",
+  "2": "Zero Hunger",
+  "3": "Good Health and Well-being",
+  "4": "Quality Education",
+  "5": "Gender Equality",
+  "7": "Affordable and Clean Energy",
+  "8": "Decent Work and Economic Growth",
+  "9": "Industry, Innovation and Infrastructure",
+  "10": "Reduced Inequalities",
+  "11": "Sustainable Cities and Communities",
+  "12": "Responsible Consumption and Production",
+  "13": "Climate Action",
+  "6": "Clean Water and Sanitation"
+ },
+ "voids": [
+  {
+   "id": 3,
+   "name": "Agricultural market & finance void",
+   "description": "Smallholders lack inputs, buyers, fair prices, or credit"
+  },
+  {
+   "id": 12,
+   "name": "Bond/fixed-income access void",
+   "description": "Bond markets opaque and dominated by banks; retail investors excluded"
+  },
+  {
+   "id": 6,
+   "name": "Capital access gap (pioneer gap / missing middle)",
+   "description": "Enterprises too risky for VC, too big for microfinance/philanthropy"
+  },
+  {
+   "id": 10,
+   "name": "Climate resilience & clean environment void",
+   "description": "Climate change effects (water scarcity, floods, heat) undermine vulnerable communities lacking adaptive infrastructure"
+  },
+  {
+   "id": 5,
+   "name": "Education & childcare void",
+   "description": "Quality early education/childcare unavailable to low-income families"
+  },
+  {
+   "id": 2,
+   "name": "Energy access",
+   "description": "Grid electricity absent or unreliable for rural/poor populations"
+  },
+  {
+   "id": 1,
+   "name": "Financial exclusion",
+   "description": "Banks/credit systems fail to serve low-income or unbanked populations"
+  },
+  {
+   "id": 14,
+   "name": "Financial literacy void",
+   "description": "Complex financial products & news inaccessible to most of the population"
+  },
+  {
+   "id": 4,
+   "name": "Healthcare access",
+   "description": "Primary care, diagnostics, or medicine unaffordable or unavailable"
+  },
+  {
+   "id": 17,
+   "name": "Healthy food access void",
+   "description": "Food system dominated by ultra-processed products; honest healthy options scarce"
+  },
+  {
+   "id": 18,
+   "name": "Housing finance void",
+   "description": "Low-income informally employed households denied mortgages by banks requiring formal income proof"
+  },
+  {
+   "id": 13,
+   "name": "Insurance penetration void",
+   "description": "Very low health/life insurance penetration leaving families exposed to catastrophic costs"
+  },
+  {
+   "id": 19,
+   "name": "MSME credit void",
+   "description": "Small businesses lack collateral, credit history, or formal financial records for bank loans"
+  },
+  {
+   "id": 7,
+   "name": "Payments & infrastructure void",
+   "description": "Fragmented or absent payment/commerce rails"
+  },
+  {
+   "id": 9,
+   "name": "Philanthropic engagement gap",
+   "description": "Charitable giving infrastructure underdeveloped"
+  },
+  {
+   "id": 11,
+   "name": "Retail capital market access void",
+   "description": "Capital markets shallow; retail investors lack diversified, transparent, low-cost products beyond mutual funds"
+  },
+  {
+   "id": 21,
+   "name": "Rural last-mile access void",
+   "description": "Rural households lack physical access to credit, insurance, and quality products"
+  },
+  {
+   "id": 16,
+   "name": "Sanitation & hygiene void",
+   "description": "Lack of safe sanitation and menstrual hygiene products & facilities"
+  },
+  {
+   "id": 20,
+   "name": "School finance void",
+   "description": "Affordable private schools serving low-income families lack infrastructure and working capital finance"
+  },
+  {
+   "id": 8,
+   "name": "Supply chain void",
+   "description": "Broken formal supply chains between producers and off-takers"
+  },
+  {
+   "id": 15,
+   "name": "Urban air pollution void",
+   "description": "Severe urban air pollution with no affordable clean-air infrastructure"
+  },
+  {
+   "id": 22,
+   "name": "Worker living infrastructure void",
+   "description": "Migrant workers from Entrepreneurial Households lack housing and living infrastructure near industrial sites"
+  }
+ ]
+}

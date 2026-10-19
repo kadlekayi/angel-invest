@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel Impact Tracker — Development &amp; Social Entrepreneurship</title>
+<style>
+  :root{
+    --bg:#0e1512; --card:#16211c; --card2:#1c2b24; --text:#e8f0ea; --muted:#9ab5a5;
+    --accent:#4fd1a5; --accent2:#8ad9ff; --warn:#e8b04f; --border:#2a3d33;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.5;padding:2rem 1rem;max-width:1200px;margin:0 auto}
+  header{margin-bottom:1.5rem}
+  h1{font-size:1.7rem;color:var(--accent);letter-spacing:.5px}
+  .sub{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+  .stats{display:flex;gap:1rem;flex-wrap:wrap;margin:1.2rem 0}
+  .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.7rem 1.1rem;min-width:120px}
+  .stat b{display:block;font-size:1.5rem;color:var(--accent2)}
+  .stat span{font-size:.8rem;color:var(--muted)}
+  nav{display:flex;gap:.5rem;margin:1rem 0;flex-wrap:wrap}
+  .tab{padding:.45rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--card);
+    color:var(--muted);cursor:pointer;font-size:.9rem}
+  .tab.active{background:var(--accent);color:#08120d;border-color:var(--accent);font-weight:600}
+  .controls{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0;align-items:center}
+  input[type=search]{background:var(--card);border:1px solid var(--border);color:var(--text);
+    padding:.5rem .8rem;border-radius:8px;font-size:.9rem;min-width:240px}
+  select{background:var(--card);border:1px solid var(--border);color:var(--text);padding:.5rem;border-radius:8px}
+  .chips{display:flex;gap:.4rem;flex-wrap:wrap}
+  .chip{background:var(--card2);border:1px solid var(--border);color:var(--muted);border-radius:20px;
+    padding:.15rem .6rem;font-size:.75rem;cursor:pointer}
+  .chip.on{background:var(--accent2);color:#08120d;border-color:var(--accent2);font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1rem}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem}
+  .card h3{font-size:1.02rem;color:var(--accent);margin-bottom:.2rem}
+  .card h3 a{color:inherit;text-decoration:none}
+  .card h3 a:hover{text-decoration:underline}
+  .tag{display:inline-block;background:var(--card2);border:1px solid var(--border);color:var(--muted);
+    border-radius:6px;padding:.05rem .45rem;font-size:.72rem;margin:.15rem .25rem .15rem 0}
+  .tag.sdg{color:var(--accent2)}
+  .tag.void{color:var(--warn)}
+  .tag.inv{color:var(--accent)}
+  .card p{font-size:.85rem;color:var(--muted);margin-top:.4rem}
+  .meta{font-size:.78rem;color:var(--muted);margin-top:.5rem;border-top:1px dashed var(--border);padding-top:.5rem}
+  .cluster h2{color:var(--warn);font-size:1.1rem;margin:1.6rem 0 .6rem;border-bottom:1px solid var(--border);padding-bottom:.3rem}
+  .void-desc{font-size:.8rem;color:var(--muted);margin-bottom:.8rem}
+  footer{margin-top:2.5rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);padding-top:1rem}
+  footer a{color:var(--accent2)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Angel Impact Tracker</h1>
+  <div class="sub">Investors &amp; startups filling <b>institutional voids</b> — per the Social Entrepreneurship
+  definition: target an institutional void, embed meaningful social impact in the business model.
+  Data: Raintree, Rainmatter (Zerodha), Elevar Equity, Acumen &amp; global networks.</div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<nav>
+  <button class="tab active" data-tab="startups">Startups</button>
+  <button class="tab" data-tab="investors">Investors</button>
+  <button class="tab" data-tab="voids">Institutional Voids</button>
+</nav>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Search name, sector, region…">
+  <select id="region">
+    <option value="">All regions</option>
+  </select>
+  <select id="sector">
+    <option value="">All sectors</option>
+  </select>
+  <div class="chips" id="sdgchips"></div>
+</div>
+
+<div id="startups" class="view"><div class="grid" id="startupGrid"></div></div>
+<div id="investors" class="view hidden"><div class="grid" id="investorGrid"></div></div>
+<div id="voids" class="view hidden" id="voidView"></div>
+
+<footer>
+  Built from the <a href="https://github.com/kadlekayi/angel-invest">angel-invest</a> tracker
+  (CSV sources → SQLite relational model → static export). Additions welcome via PR.
+</footer>
+
+<script>
+let DATA=null, activeTab='startups', activeSdg=null;
+
+async function init(){
+  DATA = await fetch('data.json').then(r=>r.json());
+  renderStats();
+  fillFilters();
+  renderSdgChips();
+  render();
+  document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>setTab(t.dataset.tab));
+  document.getElementById('q').oninput=render;
+  document.getElementById('region').onchange=render;
+  document.getElementById('sector').onchange=render;
+}
+function setTab(t){
+  activeTab=t;
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));
+  document.querySelectorAll('.view').forEach(v=>v.classList.add('hidden'));
+  document.getElementById(t).classList.remove('hidden');
+  render();
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+
+function renderStats(){
+  const nInv=DATA.investors.length, nSt=DATA.startups.length,
+        nVoids=DATA.voids.length, nEdges=DATA.investors.reduce((a,i)=>a+i.portfolio.length,0);
+  document.getElementById('stats').innerHTML=`
+    <div class="stat"><b>${nInv}</b><span>investors &amp; networks</span></div>
+    <div class="stat"><b>${nSt}</b><span>startups</span></div>
+    <div class="stat"><b>${nVoids}</b><span>institutional voids mapped</span></div>
+    <div class="stat"><b>${nEdges}</b><span>tracked investment edges</span></div>`;
+}
+function fillFilters(){
+  const regions=[...new Set(DATA.startups.map(s=>s.region).filter(Boolean))].sort();
+  const sectors=[...new Set(DATA.startups.map(s=>s.sector).filter(Boolean))].sort();
+  document.getElementById('region').innerHTML+='<option>'+regions.join('</option><option>')+'</option>';
+  document.getElementById('sector').innerHTML+='<option>'+sectors.join('</option><option>')+'</option>';
+}
+function renderSdgChips(){
+  const el=document.getElementById('sdgchips');
+  el.innerHTML=Object.entries(DATA.sdgs).map(([n,t])=>
+    `<button class="chip" data-sdg="${n}">SDG ${n}</button>`).join('');
+  el.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    activeSdg = activeSdg===c.dataset.sdg? null : c.dataset.sdg;
+    el.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x.dataset.sdg===activeSdg));
+    render();
+  });
+}
+function matches(s){
+  const q=document.getElementById('q').value.toLowerCase();
+  const reg=document.getElementById('region').value;
+  const sec=document.getElementById('sector').value;
+  if(reg && s.region!==reg) return false;
+  if(sec && s.sector!==sec) return false;
+  if(activeSdg && !(s.sdgs||[]).map(String).includes(activeSdg)) return false;
+  if(q){
+    const blob=[s.name,s.sector,s.region,s.void,s.model,(s.investors||[]).map(i=>i.investor).join(' ')].join(' ').toLowerCase();
+    if(!blob.includes(q)) return false;
+  }
+  return true;
+}
+function sdgTags(s){return (s.sdgs||[]).map(n=>`<span class="tag sdg">SDG ${n} ${esc(DATA.sdgs[n]||'')}</span>`).join('')}
+function invTags(list){return (list||[]).map(e=>`<span class="tag inv">${esc(e.investor||e.startup)}${e.round?' · '+esc(e.round):''}</span>`).join('')}
+
+function render(){
+  if(activeTab==='startups') renderStartups();
+  else if(activeTab==='investors') renderInvestors();
+  else renderVoids();
+}
+function renderStartups(){
+  const rows=DATA.startups.filter(matches);
+  document.getElementById('startupGrid').innerHTML=rows.map(s=>`
+    <div class="card">
+      <h3><a href="${esc(s.website)}" target="_blank">${esc(s.name)}</a></h3>
+      <span class="tag void">${esc(s.void)}</span><span class="tag">${esc(s.sector)}</span>
+      <span class="tag">${esc(s.region)}</span><span class="tag">${esc(s.stage)}</span>
+      <p>${esc(s.model)}</p>
+      ${sdgTags(s)}
+      <div class="meta">Backed by: ${invTags(s.investors)||'<i>not yet mapped</i>'}</div>
+    </div>`).join('') || '<p style="color:var(--muted)">No matches.</p>';
+}
+function renderInvestors(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const rows=DATA.investors.filter(i=>{
+    if(activeSdg) return false; // SDG chips apply to startups tab
+    if(q){const blob=[i.name,i.type,i.geography,i.focus,i.void].join(' ').toLowerCase();
+      if(!blob.includes(q))return false;}
+    return true;});
+  document.getElementById('investorGrid').innerHTML=rows.map(i=>`
+    <div class="card">
+      <h3><a href="${esc(i.website)}" target="_blank">${esc(i.name)}</a></h3>
+      <span class="tag void">${esc(i.void)}</span><span class="tag">${esc(i.type)}</span>
+      <span class="tag">${esc(i.geography)}</span>
+      <p>${esc(i.thesis)}</p>
+      <div class="meta"><b>Focus:</b> ${esc(i.focus)}<br><b>Stage:</b> ${esc(i.stage)} ·
+        <b>Check:</b> ${esc(i.check)}<br>Portfolio: ${invTags(i.portfolio)||'<i>edges not yet mapped</i>'}</div>
+    </div>`).join('');
+}
+function renderVoids(){
+  const q=document.getElementById('q').value.toLowerCase();
+  const groups={};
+  DATA.startups.forEach(s=>{(groups[s.void]=groups[s.void]||[]).push(s)});
+  const voidDesc={}; DATA.voids.forEach(v=>voidDesc[v.name]=v.description);
+  let html='';
+  Object.keys(groups).sort().forEach(v=>{
+    if(q && !v.toLowerCase().includes(q) && !groups[v].some(s=>s.name.toLowerCase().includes(q))) return;
+    html+=`<div class="cluster"><h2>${esc(v)}</h2>
+      <div class="void-desc">${esc(voidDesc[v]||'')}</div>
+      <div class="grid">${groups[v].filter(matches).map(s=>`
+        <div class="card"><h3><a href="${esc(s.website)}" target="_blank">${esc(s.name)}</a></h3>
+        <span class="tag">${esc(s.sector)}</span><span class="tag">${esc(s.region)}</span>
+        <p>${esc(s.model)}</p>${sdgTags(s)}</div>`).join('')}</div></div>`;
+  });
+  document.getElementById('voids').innerHTML=html||'<p style="color:var(--muted)">No matches.</p>';
+}
+init();
+</script>
+</body>
+</html>
