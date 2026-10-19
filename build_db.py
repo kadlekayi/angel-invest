@@ -48,6 +48,11 @@ voids = [
  ("Urban air pollution void","Severe urban air pollution with no affordable clean-air infrastructure"),
  ("Sanitation & hygiene void","Lack of safe sanitation and menstrual hygiene products & facilities"),
  ("Healthy food access void","Food system dominated by ultra-processed products; honest healthy options scarce"),
+ ("Housing finance void","Low-income informally employed households denied mortgages by banks requiring formal income proof"),
+ ("MSME credit void","Small businesses lack collateral, credit history, or formal financial records for bank loans"),
+ ("School finance void","Affordable private schools serving low-income families lack infrastructure and working capital finance"),
+ ("Rural last-mile access void","Rural households lack physical access to credit, insurance, and quality products"),
+ ("Worker living infrastructure void","Migrant workers from Entrepreneurial Households lack housing and living infrastructure near industrial sites"),
 ]
 cur.executemany("INSERT INTO voids(name, description) VALUES (?,?)", voids)
 
@@ -82,6 +87,14 @@ sv = {
  "Praan": ("Urban air pollution void",[3,11,13]),
  "PeeSafe": ("Sanitation & hygiene void",[3,5,6]),
  "The Whole Truth": ("Healthy food access void",[2,3,12]),
+ "Ujjivan Financial Services": ("Financial exclusion",[1,8,10]),
+ "Shubham Housing Finance": ("Housing finance void",[1,10,11]),
+ "Varthana": ("School finance void",[4,8,10]),
+ "SarvaGram": ("Rural last-mile access void",[1,8,10]),
+ "Indifi Technologies": ("MSME credit void",[8,9,10]),
+ "Vistaar Financial Services": ("MSME credit void",[8,10]),
+ "Afluenta": ("Financial exclusion",[8,10]),
+ "Nia.one": ("Worker living infrastructure void",[8,10,11]),
 }
 with open("startups.csv") as f:
     for r in csv.DictReader(f):
@@ -115,6 +128,9 @@ ivmap = {
  "Rainmatter Capital (Zerodha)":"Capital access gap (pioneer gap / missing middle)",
  "Rainmatter Foundation (Zerodha)":"Climate resilience & clean environment void",
  "Climate Angels":"Climate resilience & clean environment void",
+ "Elevar Equity":"Financial exclusion",
+ "Sandeep Farias":"Capital access gap (pioneer gap / missing middle)",
+ "EPIC World":"Capital access gap (pioneer gap / missing middle)",
 }
 with open("investors.csv") as f:
     for r in csv.DictReader(f):
@@ -137,6 +153,15 @@ seed = [
  ("Rainmatter Capital (Zerodha)","PeeSafe","equity",None,None,"Rainmatter portfolio; Entrepreneur India"),
  ("Rainmatter Capital (Zerodha)","The Whole Truth","equity",None,None,"Rainmatter portfolio; Entrepreneur India"),
  ("Climate Angels","Praan","seed",None,"2022-07","Climate Angels portfolio page: seed round July 2022"),
+ ("Elevar Equity","Ujjivan Financial Services","equity",None,"2008","Elevar founding-era investment; Ujjivan IPO 2016"),
+ ("Elevar Equity","Shubham Housing Finance","equity",None,"2012","Elevar backed since 2012; exited to LeapFrog/BII/Premji Invest 2022"),
+ ("Elevar Equity","Varthana","equity",None,None,"Elevar portfolio; Varthana raised ~$200M 2020-2024"),
+ ("Elevar Equity","SarvaGram","equity",None,None,"Elevar portfolio"),
+ ("Elevar Equity","Indifi Technologies","equity",None,None,"Elevar portfolio; co-invested with Omidyar/IFC"),
+ ("Elevar Equity","Vistaar Financial Services","equity",None,"2008","Elevar founding-era investment; exited to Warburg Pincus 2022"),
+ ("Elevar Equity","Afluenta","equity",None,None,"Elevar portfolio; first LatAm P2P platform"),
+ ("Elevar Equity","Nia.one","seed",None,"2024","Elevar Fund V; thesis venture on worker living infrastructure"),
+ ("LeapFrog Investments","Shubham Housing Finance","equity",None,"2022","LeapFrog acquired Elevar's stake 2022 (exit)"),
 ]
 for i,s,rd,amt,dt,note in seed:
     cur.execute("""INSERT INTO investments(investor_id,startup_id,round,amount_usd,announced_date,notes)
